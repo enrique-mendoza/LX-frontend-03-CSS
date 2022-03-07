@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Header */
+@media (min-width: 768px) {
+  .header {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+.header__title {
+  color: var(--headerTitle);
+}

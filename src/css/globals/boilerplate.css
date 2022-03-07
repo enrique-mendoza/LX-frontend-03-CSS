@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--background);
+  font-family: var(--font-Rubik);
+  font-size: 1.6rem; /* 1rem = 10px */
+}

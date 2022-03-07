@@ -1,0 +1,3 @@
+@import '~normalize.css/normalize.css';
+@import url(globals/_index.css) all;
+@import url(components/_index.css) all;

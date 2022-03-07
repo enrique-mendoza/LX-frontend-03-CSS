@@ -1,0 +1,30 @@
+:root {
+  --background: #ffffff;
+  --header: #e6f4fc;
+  --footer: #eef3ff;
+
+  /* Titles */
+  --headerTitle: #3858d6;
+  --title: #1f3e72;
+  --text: #6d7b93;
+
+  /* Buttons */
+  --btn-selected-text: #fafafa;
+  --btn-selected-bg: #2747c5;
+  --btn-selected-shadow: #acbcea;
+
+  --btn-text: #667fe0;
+  --btn-bg: #f1f5ff;
+
+  /* Icons */
+  --icon-yellow: #ffd012;
+  --icon-yellow-bg: #fff9e0;
+  --icon-yellow-shadow: #fff8dc;
+
+  --icon-blue: #2c4cca;
+  --icon-blue-bg: #f1f5ff;
+  --icon-blue-shadow: #dce3ff;
+
+  /* Borders */
+  --border-blue: #fafaff;
+}
