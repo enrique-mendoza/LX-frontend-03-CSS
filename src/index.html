@@ -4,21 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <!-- header -->
+    <!-- Header -->
     <header class="header container">
       <div class="header__title">
-        <h1>Vaccination</h1>
+        <h1 class="title">Vaccination</h1>
       </div>
 
       <nav class="header__navigation">
-        <a href="#">Database</a>
-        <a href="#">Education</a>
-        <a href="#">News</a>
-        <a href="#">Regulation</a>
-        <a href="#">Hoax Buster</a>
+        <a href="#" class="header__link">Database</a>
+        <a href="#" class="header__link">Education</a>
+        <a href="#" class="header__link">News</a>
+        <a href="#" class="header__link">Regulation</a>
+        <a href="#" class="header__link">Hoax Buster</a>
       </nav>
     </header>
+
+    <!-- Main -->
+    <main class="container">
+      <!-- Schedule content -->
+      <section class="two-columns">
+        <article class="info-container">
+          <div class="schedule">
+            <!-- Title -->
+            <h2 class="schedule__title">Fight Virus With Vaccines</h2>
+            <!-- Paragraph -->
+            <p class="schedule__paragraph">
+              Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get
+              infected
+            </p>
+            <!-- Pros -->
+            <div class="schedule__pros">
+              <div class="pro">
+                <div class="pro__icon">
+                  <img alt="icon-shield" class="icon-shield" />
+                </div>
+                <p class="pro__text">Best protection</p>
+              </div>
+
+              <div class="pro">
+                <div class="pro__icon">
+                  <img alt="icon-star" class="icon-star" />
+                </div>
+                <p class="pro__text">Selected vaccines</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="entry">
+          <img alt="nurse" class="img-nurse" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>

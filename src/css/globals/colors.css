@@ -1,30 +1,31 @@
 :root {
-  --background: #ffffff;
-  --header: #e6f4fc;
-  --footer: #eef3ff;
+  --background: hsl(0, 0%, 100%);
+  --header: hsl(202, 79%, 95%);
+  --footer: hsl(222, 100%, 97%);
 
   /* Titles */
-  --headerTitle: #3858d6;
-  --title: #1f3e72;
-  --text: #6d7b93;
+  --headerTitle: hsl(228, 66%, 53%);
+  --title: hsl(218, 57%, 28%);
+  --text: hsl(218, 15%, 50%);
 
   /* Buttons */
-  --btn-selected-text: #fafafa;
-  --btn-selected-bg: #2747c5;
-  --btn-selected-shadow: #acbcea;
+  --btn-selected-text: hsl(0, 0%, 98%);
+  --btn-selected-bg: hsl(228, 67%, 46%);
+  --btn-selected-shadow: hsl(225, 60%, 80%);
 
-  --btn-text: #667fe0;
-  --btn-bg: #f1f5ff;
+  --btn-text: hsl(228, 66%, 64%);
+  --btn-bg: hsl(223, 100%, 97%);
 
   /* Icons */
-  --icon-yellow: #ffd012;
-  --icon-yellow-bg: #fff9e0;
-  --icon-yellow-shadow: #fff8dc;
+  --icon-yellow: hsl(48, 100%, 54%);
+  --icon-yellow-bg: hsl(48, 100%, 94%);
+  --icon-yellow-shadow: hsl(48, 100%, 93%);
 
-  --icon-blue: #2c4cca;
-  --icon-blue-bg: #f1f5ff;
-  --icon-blue-shadow: #dce3ff;
+  --icon-blue: hsl(228, 64%, 48%);
+  --icon-blue-bg: hsl(223, 100%, 97%);
+  --icon-blue-shadow: hsl(228, 100%, 93%);
 
   /* Borders */
-  --border-blue: #fafaff;
+  --border-white: hsl(0, 0%, 100%);
+  --border-blue: hsl(240, 100%, 99%);
 }

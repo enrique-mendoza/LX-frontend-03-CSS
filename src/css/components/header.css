@@ -1,16 +1,73 @@
+/* Header */
 .header {
+  align-items: center;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-/* Header */
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .header {
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: row;
   }
 }
 
-.header__title {
+/* credits: https://stackoverflow.com/questions/21177314/background-color-50-one-color-and-50-another-color */
+.header {
+  position: relative;
+}
+
+.header:after,
+.header:before {
+  content: ' ';
+  height: 100%;
+  position: absolute;
+  width: 50%;
+  z-index: -1;
+}
+
+.header:after {
+  background: transparent;
+  left: 0px;
+}
+
+.header:before {
+  background: var(--header);
+  filter: blur(0.4rem);
+  right: 0px;
+}
+
+/* Header title */
+
+.title {
   color: var(--headerTitle);
+  font-size: 3.5rem;
+}
+
+/* Header navigation */
+.header__navigation {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 480px) {
+  .header__navigation {
+    flex-direction: row;
+  }
+}
+
+.header__link {
+  font-weight: 600;
+  padding: 1.2rem 3rem;
+}
+
+.header__link:hover {
+  background-color: var(--btn-selected-bg);
+  border-radius: 5%;
+  box-shadow: 0px 11px 9px -4px var(--btn-selected-shadow);
+  color: var(--btn-selected-text);
+  -moz-box-shadow: 0px 11px 9px -4px var(--btn-selected-shadow);
+  -webkit-box-shadow: 0px 11px 9px -4px var(--btn-selected-shadow);
 }
