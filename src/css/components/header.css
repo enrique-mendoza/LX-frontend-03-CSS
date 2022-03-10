@@ -1,23 +1,9 @@
 /* Header */
 .header {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-@media (min-width: 480px) {
-  .header {
-    flex-direction: row;
-  }
-}
-
-/* credits: https://stackoverflow.com/questions/21177314/background-color-50-one-color-and-50-another-color */
-.header {
   position: relative;
 }
 
+/* Credits: https://stackoverflow.com/questions/21177314/background-color-50-one-color-and-50-another-color */
 .header:after,
 .header:before {
   content: ' ';
@@ -38,8 +24,33 @@
   right: 0px;
 }
 
-/* Header title */
+.header-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
+@media (min-width: 1140px) {
+  .header-content {
+    justify-content: space-between;
+    margin: 0 11rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header-content {
+    margin: 0 25rem;
+  }
+}
+
+@media (min-width: 1420px) {
+  .header-content {
+    flex-direction: row;
+  }
+}
+
+/* Header title */
 .title {
   color: var(--headerTitle);
   font-size: 3.5rem;
@@ -52,7 +63,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 726px) {
   .header__navigation {
     flex-direction: row;
   }

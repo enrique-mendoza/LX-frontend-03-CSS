@@ -16,52 +16,194 @@
   <body>
     <!-- Header -->
     <header class="header container">
-      <div class="header__title">
-        <h1 class="title">Vaccination</h1>
-      </div>
+      <div class="header-content">
+        <div class="header__title">
+          <h1 class="title">Vaccination</h1>
+        </div>
 
-      <nav class="header__navigation">
-        <a href="#" class="header__link">Database</a>
-        <a href="#" class="header__link">Education</a>
-        <a href="#" class="header__link">News</a>
-        <a href="#" class="header__link">Regulation</a>
-        <a href="#" class="header__link">Hoax Buster</a>
-      </nav>
+        <nav class="header__navigation">
+          <a href="#" class="header__link">Database</a>
+          <a href="#" class="header__link">Education</a>
+          <a href="#" class="header__link">News</a>
+          <a href="#" class="header__link">Regulation</a>
+          <a href="#" class="header__link">Hoax Buster</a>
+        </nav>
+      </div>
     </header>
 
     <!-- Main -->
     <main class="container">
       <!-- Schedule content -->
       <section class="two-columns">
-        <article class="info-container">
+        <article class="section-info">
           <div class="schedule">
-            <!-- Title -->
-            <h2 class="schedule__title">Fight Virus With Vaccines</h2>
-            <!-- Paragraph -->
-            <p class="schedule__paragraph">
-              Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get
-              infected
-            </p>
-            <!-- Pros -->
-            <div class="schedule__pros">
-              <div class="pro">
-                <div class="pro__icon">
-                  <img alt="icon-shield" class="icon-shield" />
+            <!-- Information -->
+            <div class="schedule__info">
+              <!-- Title -->
+              <h2 class="schedule__title">Fight Virus With Vaccines</h2>
+              <!-- Paragraph -->
+              <p class="schedule__paragraph">
+                Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get
+                infected
+              </p>
+              <!-- Pros -->
+              <div class="schedule__pros">
+                <div class="sub-card">
+                  <div class="sub-card__icon sub-card--yellow">
+                    <img alt="icon-shield" class="icon-shield sub-card--icon-yellow" />
+                  </div>
+                  <p class="sub-card__text">Best protection</p>
                 </div>
-                <p class="pro__text">Best protection</p>
+
+                <div class="sub-card">
+                  <div class="sub-card__icon sub-card--yellow">
+                    <img alt="icon-star" class="icon-star sub-card--icon-yellow" />
+                  </div>
+                  <p class="sub-card__text">Selected vaccines</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Schedule form-->
+            <div class="schedule__form">
+              <!-- Title -->
+              <div class="form__title sub-card">
+                <div class="sub-card__icon sub-card--blue">
+                  <img alt="icon-clock" class="icon-clock sub-card--icon-blue" />
+                </div>
+                <p class="sub-card__text sub-card--big">Schedule your vaccinations</p>
               </div>
 
-              <div class="pro">
-                <div class="pro__icon">
-                  <img alt="icon-star" class="icon-star" />
+              <!-- Form -->
+              <form class="form">
+                <div class="form__form">
+                  <!-- Field location -->
+                  <div class="field">
+                    <div class="sub-card">
+                      <div class="sub-card__icon sub-card--blue sub-card--no-details">
+                        <img alt="icon-location" class="icon-location sub-card--icon-blue" />
+                      </div>
+                      <label for="location" class="sub-card__text sub-card--normal">Location</label>
+                    </div>
+                    <input type="text" placeholder="Jakarta Utara" id="location" class="field__field" />
+                  </div>
+
+                  <!-- Field date -->
+                  <div class="field">
+                    <div class="sub-card">
+                      <div class="sub-card__icon sub-card--blue sub-card--no-details">
+                        <img alt="icon-date" class="icon-date sub-card--icon-blue" />
+                      </div>
+                      <label for="date" class="sub-card__text sub-card--normal">Date</label>
+                    </div>
+                    <input type="text" placeholder="08 July 2021" id="date" class="field__field" />
+                  </div>
+
+                  <!-- Field type -->
+                  <div class="field">
+                    <div class="sub-card">
+                      <div class="sub-card__icon sub-card--blue sub-card--no-details">
+                        <img alt="icon-type" class="icon-type sub-card--icon-blue" />
+                      </div>
+                      <label for="type" class="sub-card__text sub-card--normal">Type</label>
+                    </div>
+                    <input type="text" placeholder="Moderna" id="type" class="field__field" />
+                  </div>
+
+                  <!-- Submit button -->
+                  <input type="submit" value="Submit" class="submit" />
                 </div>
-                <p class="pro__text">Selected vaccines</p>
-              </div>
+              </form>
             </div>
           </div>
         </article>
-        <div class="entry">
+
+        <!-- Nurse image -->
+        <div class="section-img">
           <img alt="nurse" class="img-nurse" />
+        </div>
+      </section>
+
+      <!-- Logo content -->
+      <section class="logos-flex">
+        <div class="logo">
+          <img alt="astra" class="img-astra logo-img" />
+        </div>
+
+        <div class="logo">
+          <img alt="sinovac" class="img-sinovac logo-img" />
+        </div>
+
+        <div class="logo">
+          <img alt="pfi" class="img-pfizer logo-img" />
+        </div>
+
+        <div class="logo">
+          <img alt="moderna" class="img-moderna logo-img" />
+        </div>
+      </section>
+
+      <!-- Benefits content -->
+      <section class="section-info">
+        <div class="benefits__info">
+          <!-- Title -->
+          <h2 class="benefits__title">Why should I vaccine</h2>
+          <!-- Paragraph -->
+          <p class="benefits__paragraph">
+            In order to avoid doubts about getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19
+            vaccination:
+          </p>
+
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <div class="benefit__icon">
+                <img alt="icon" class="icon-switch benefit__icon--blue" />
+              </div>
+              <div class="benefit__about">
+                <h2 class="benefit__title">Minimize the spread of viruses</h2>
+                <p class="benefit__subtitle">
+                  Vaccine has been proven effective to prevent someone from getting infected with Coronavirus
+                </p>
+              </div>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit__icon">
+                <img alt="icon-shield" class="icon-shield benefit__icon--blue" />
+              </div>
+              <div class="benefit__about">
+                <h2 class="benefit__title">Forming antibodies</h2>
+                <p class="benefit__subtitle">
+                  COVID-19 vaccine proven to help shape antibody response for immune system
+                </p>
+              </div>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit__icon">
+                <img alt="icon-groups" class="icon-groups benefit__icon--blue" />
+              </div>
+              <div class="benefit__about">
+                <h2 class="benefit__title">Protecting people nearby</h2>
+                <p class="benefit__subtitle">
+                  The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around
+                  us
+                </p>
+              </div>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit__icon">
+                <img alt="icon-chat" class="icon-chat benefit__icon--blue" />
+              </div>
+              <div class="benefit__about">
+                <h2 class="benefit__title">Creating group immunity</h2>
+                <p class="benefit__subtitle">
+                  COVID-19 vaccination is also beneficial for creating group immunity or herd immunity
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

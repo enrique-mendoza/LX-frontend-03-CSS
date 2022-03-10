@@ -1,89 +1,92 @@
-/* icon from: https://iconduck.com/sets/google-material-design-icons */
-@media (min-width: 768px) {
-  .two-columns {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .entry,
-  .info-container {
-    flex-basis: calc(51% - 1rem);
-  }
-}
-
-.info-container {
-  display: flex;
-  justify-content: center;
-}
-
-.entry {
-  display: inline-block;
-}
-
 /* Schedule */
 .schedule {
-  display: flex;
-  flex-direction: column;
-  width: 42rem;
+  display: grid;
+  grid-template-columns: 42rem;
+}
+
+@media (min-width: 768px) {
+  .schedule {
+    grid-template-columns: none;
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 1400px) {
+  .schedule {
+    display: flex;
+    flex-direction: column;
+    margin: 0 25rem;
+    width: 46rem;
+  }
 }
 
 /* Title */
 .schedule__title {
-  color: var(--title);
-  font-size: 6rem;
+  font-size: 5rem;
   letter-spacing: 0.1rem;
-  margin: 11rem 0 3.5rem 0;
+  margin: 4rem 0 0 0;
+}
+
+@media (min-width: 768px) {
+  .schedule__title {
+    font-size: 6rem;
+    margin: 6rem 0 0 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .schedule__title {
+    font-size: 7rem;
+    margin: 3rem 0 0 0;
+  }
 }
 
 /* Paragraph */
 .schedule__paragraph {
-  font-size: 1.9rem;
+  font-size: 2rem;
   letter-spacing: 0.1rem;
   line-height: 2.5rem;
-  margin-bottom: 3.5rem;
+  margin: 1.5rem 0 3.5rem 0;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .schedule__paragraph {
+    margin: 3.5rem 0;
+    width: 35rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .schedule__paragraph {
+    margin: 3.5rem 0 6.5rem 0;
+    width: 70rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .schedule__paragraph {
+    font-size: 1.7rem;
+    margin: 3.5rem 0 6.5rem 0;
+    width: 42.5rem;
+  }
 }
 
 /* Pros */
 .schedule__pros {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-
-.pro {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.pro__icon {
-  align-items: center;
-  background-color: var(--icon-yellow-bg);
-  border: 2px solid var(--border-white);
-  border-radius: 5%;
-  box-shadow: 0px 11px 9px -4px var(--icon-yellow-shadow);
-  display: flex;
-  justify-content: center;
-  -moz-box-shadow: 0px 11px 9px -4px var(--icon-yellow-shadow);
-  padding: 0.5rem;
-  -webkit-box-shadow: 0px 11px 9px -4px var(--icon-yellow-shadow);
-}
-
-.pro__text {
-  color: var(--title);
-}
-
-/* credits: 
-https://stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element
-https://codepen.io/sosuke/pen/Pjoqqp
-*/
-.icon-shield,
-.icon-star {
-  filter: invert(69%) sepia(92%) saturate(415%) hue-rotate(359deg) brightness(101%) contrast(106%);
+  margin-bottom: 4.5rem;
 }
 
 /* Image */
 .img-nurse {
-  max-width: 100%;
+  border-radius: 0.2%;
+  max-width: 50%;
+}
+
+@media (min-width: 1400px) {
+  .img-nurse {
+    max-width: 100%;
+  }
 }

@@ -1,6 +1,7 @@
 h1,
 h2,
 h3 {
+  color: var(--title);
   font-family: var(--font-roboto);
 }
 
@@ -25,6 +26,7 @@ a:active {
 a,
 p {
   color: var(--text);
+  font-size: 1.7rem;
 }
 
 p {
