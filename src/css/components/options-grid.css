@@ -14,6 +14,7 @@
 
 @media (min-width: 1140px) {
   .options-grid {
+    justify-content: start;
     margin-top: 9.5rem;
   }
 }
