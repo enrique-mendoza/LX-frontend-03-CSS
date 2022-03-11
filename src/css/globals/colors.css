@@ -8,10 +8,17 @@
   --title: hsl(218, 57%, 28%);
   --text: hsl(218, 15%, 50%);
 
+  /* Form */
+  --form-shadow: hsla(228, 66%, 64%, 0.3);
+  --form-shadow-gradient-start: hsla(0, 0%, 100%, 0.95);
+  --form-shadow-gradient-end: hsla(0, 0%, 100%, 0.95);
+
   /* Buttons */
   --btn-selected-text: hsl(0, 0%, 98%);
   --btn-selected-bg: hsl(228, 67%, 46%);
   --btn-selected-shadow: hsl(225, 60%, 80%);
+
+  --btn-tedxt: rgb(103, 127, 224);
 
   --btn-text: hsl(228, 66%, 64%);
   --btn-bg: hsl(223, 100%, 97%);
@@ -24,6 +31,10 @@
   --icon-blue: hsl(228, 64%, 48%);
   --icon-blue-bg: hsl(223, 100%, 97%);
   --icon-blue-shadow: hsl(228, 100%, 93%);
+
+  --icon-alter: hsl(218, 15%, 50%);
+  --icon-alter-bg: hsl(225, 100%, 96%);
+  --icon-alter-shadow: hsl(226, 100%, 96%);
 
   /* Borders */
   --border-white: hsl(0, 0%, 100%);

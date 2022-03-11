@@ -7,13 +7,14 @@
 .form {
   border: 1px solid var(--background);
   border-radius: 0.6%;
-  box-shadow: 0px 11px 9px -4px var(--icon-blue-shadow);
-  -moz-box-shadow: 0px 11px 9px -4px var(--icon-blue-shadow);
-  overflow: hidden;
+  box-shadow: 0px 11px 9px -4px var(--form-shadow);
+  -moz-box-shadow: 0px 11px 9px -4px var(--form-shadow);
   padding: 2.5rem;
   position: relative;
-  -webkit-box-shadow: 0px 11px 9px -4px var(--icon-blue-shadow);
+  overflow: hidden;
+  z-index: 1;
   width: 37.5rem;
+  -webkit-box-shadow: 0px 11px 9px -4px var(--form-shadow);
 }
 
 @media (min-width: 768px) {
@@ -22,21 +23,18 @@
   }
 }
 
-/* Credits: https://stackoverflow.com/questions/36802257/css-div-inside-div-blur */
+/* Credits: https://codepen.io/Snip3r/pen/rdwQgM */
 .form::before {
-  background-color: var(--background);
+  background-image: linear-gradient(var(--form-shadow-gradient-start), var(--form-shadow-gradient-end));
+  background-position: 50%;
   content: '';
-  filter: blur(5px);
-  height: 100%;
-  left: 0;
+  filter: blur(8px);
+  height: calc(100% + 16px); /* 100% + blur * 2 */
+  left: -8px; /* -blur */
   position: absolute;
-  transform: scale(1.05);
-  top: 0;
-  -webkit-filter: blur(5px);
-  -webkit-transform: scale(1.05);
-  width: 100%;
-  z-index: 1;
-  /* slight overscale so blur reaches all edges */
+  top: -8px; /* -blur */
+  width: calc(100% + 16px); /* 100% + blur * 2 */
+  z-index: -1;
 }
 
 .form__form {
@@ -77,12 +75,18 @@
 }
 
 .submit {
+  align-items: center;
   background-color: var(--btn-selected-bg);
   border: none;
-  border-radius: 2.5%;
-  box-shadow: 0px 11px 9px -4px var(--btn-selected-shadow);
+  border-radius: 3%;
+  box-shadow: 0px 11px 9px -4 px var(--icon-blue-shadow);
   color: var(--btn-selected-text);
-  -moz-box-shadow: 0px 11px 9px -4px var(--btn-selected-shadow);
-  padding: 1.2rem 3rem;
-  -webkit-box-shadow: 0px 11px 9px -4px var(--btn-selected-shadow);
+  cursor: pointer;
+  display: flex;
+  height: 6rem;
+  justify-content: center;
+  -moz-box-shadow: 0px 11px 9px -4px var(--icon-blue-shadow);
+  text-align: center;
+  width: 100%;
+  -webkit-box-shadow: 0px 11px 9px -4px var(--icon-blue-shadow);
 }

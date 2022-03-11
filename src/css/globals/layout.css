@@ -16,7 +16,7 @@
   text-align: center;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1700px) {
   .two-columns {
     display: flex;
     justify-content: space-between;

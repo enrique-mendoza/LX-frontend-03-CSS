@@ -1,44 +1,51 @@
-.benefits {
+/* Preparations info */
+.preparations {
   display: grid;
   grid-template-columns: 42rem;
 }
 
 @media (min-width: 768px) {
-  .benefits {
+  .preparations {
     grid-template-columns: none;
     grid-template-rows: repeat(1, 1fr);
   }
 }
 
 @media (min-width: 1400px) {
-  .benefits {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    margin: 0 25rem;
-    width: 140rem;
+  .preparations {
+    margin-top: 6.5rem;
   }
 }
 
-.benefits__title {
+@media (min-width: 1700px) {
+  .preparations {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6rem;
+    width: 60rem;
+  }
+}
+
+/* Preparations text */
+.preparations__title {
   font-size: 4rem;
   letter-spacing: 0.1rem;
   margin: 4rem 0 0 0;
 }
 
 @media (min-width: 768px) {
-  .benefits__title {
+  .preparations__title {
     margin: 6rem 0 0 0;
   }
 }
 
 @media (min-width: 1400px) {
-  .benefits__title {
+  .preparations__title {
     margin: 3rem 0 0 0;
   }
 }
 
-.benefits__paragraph {
+.preparations__paragraph {
   font-size: 2rem;
   letter-spacing: 0.1rem;
   line-height: 2.5rem;
@@ -47,23 +54,35 @@
 }
 
 @media (min-width: 480px) {
-  .benefits__paragraph {
+  .preparations__paragraph {
     margin: 3.5rem 0;
     width: 35rem;
   }
 }
 
 @media (min-width: 768px) {
-  .benefits__paragraph {
+  .preparations__paragraph {
     margin: 3.5rem 0 6.5rem 0;
     width: 70rem;
   }
 }
 
 @media (min-width: 1400px) {
-  .benefits__paragraph {
+  .preparations__paragraph {
     font-size: 1.7rem;
-    margin: 3.5rem 0 6.5rem 0;
+    margin: 3.5rem 0 4.5rem 0;
     width: 56.5rem;
+  }
+}
+
+/* Woman image */
+.img-woman {
+  border-radius: 0.2%;
+  max-width: 50%;
+}
+
+@media (min-width: 1700px) {
+  .img-woman {
+    max-width: 100%;
   }
 }

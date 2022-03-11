@@ -1,20 +1,28 @@
+/* Logos container */
 .logos-flex {
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 3rem;
   justify-content: center;
-  margin: 5rem 0 7rem 0;
+  margin: 5rem 0 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .logos-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 1400px) {
   .logos-flex {
     flex-direction: row;
     gap: 7rem;
-    margin: 5rem 0 10rem 0;
   }
 }
 
+/* Logo */
 .logo {
   width: 25rem;
 }

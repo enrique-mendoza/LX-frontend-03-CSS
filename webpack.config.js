@@ -68,7 +68,7 @@ module.exports = (env, argv) => {
     output: {
       clean: true,
       filename: isProduction ? '[name].[fullhash].js' : 'main.js',
-      path: path.resolve(__dirname, 'build'),
+      path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
       new HtmlWebpackPlugin({
