@@ -44,7 +44,7 @@ const rulesForFiles = {
   test: /\.(jpe?g|png|gif|svg|webp)$/i,
   type: 'asset/resource',
   generator: {
-    filename: 'assets/img/[name].[ext]',
+    filename: 'assets/images/[name].[ext]',
   },
   loader: 'image-webpack-loader',
 };

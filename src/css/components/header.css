@@ -1,52 +1,47 @@
+/* Header content */
+.header-content {
+  padding: 0;
+}
+
 /* Header */
 .header {
-  position: relative;
+  display: grid;
+  grid-template-columns: 42rem;
+  margin-bottom: 0;
 }
 
-/* Credits: https://stackoverflow.com/questions/21177314/background-color-50-one-color-and-50-another-color */
-.header:after,
-.header:before {
-  content: ' ';
-  height: 100%;
-  position: absolute;
-  width: 50%;
-  z-index: -1;
-}
-
-.header:after {
-  background: transparent;
-  left: 0px;
-}
-
-.header:before {
-  background: var(--header);
-  filter: blur(0.4rem);
-  right: 0px;
-}
-
-.header-content {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-@media (min-width: 1140px) {
-  .header-content {
-    justify-content: space-between;
-    margin: 0 11rem;
+@media (min-width: 768px) {
+  .header {
+    grid-template-columns: none;
+    grid-template-rows: repeat(1, 1fr);
   }
 }
 
-@media (min-width: 1400px) {
-  .header-content {
-    margin: 0 25rem;
+.navigation {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-bottom: 0;
+}
+
+@media (min-width: 480px) {
+  .navigation {
+    justify-content: center;
+    align-items: center;
   }
 }
 
-@media (min-width: 1420px) {
-  .header-content {
-    flex-direction: row;
+@media (min-width: 768px) {
+  .navigation {
+    justify-content: start;
+  }
+}
+
+@media (min-width: 1700px) {
+  .navigation {
+    display: block;
+    height: auto;
+    margin: 0;
+    width: 46rem;
   }
 }
 
@@ -56,29 +51,90 @@
   font-size: 3.5rem;
 }
 
-/* Header navigation */
-.header__navigation {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 726px) {
-  .header__navigation {
-    flex-direction: row;
+@media (min-width: 480px) {
+  .header__title {
+    text-align: center;
   }
 }
 
-.header__link {
+@media (min-width: 1700px) {
+  .header__title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 25rem;
+    text-align: start;
+    width: 46rem;
+  }
+}
+
+/* Credits: https://stackoverflow.com/questions/2941189/how-to-overlay-one-div-over-another-div */
+.wrapper {
+  position: relative;
+}
+
+.blur {
+  background-color: var(--header);
+  filter: blur(0.4rem);
+  -webkit-filter: blur(0.4rem);
+  height: 21.8rem;
+  border-radius: 1%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .blur {
+    height: 4.8rem;
+    padding: 4rem;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+    top: 1.65rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .nav {
+    top: 2rem;
+    width: auto;
+  }
+}
+
+/* Links */
+.nav__link {
   font-weight: 600;
   padding: 1.2rem 3rem;
 }
 
-.header__link:hover {
+@media (min-width: 480px) {
+  .nav__link {
+    text-align: center;
+  }
+}
+
+.nav__link:hover {
   background-color: var(--btn-selected-bg);
-  border-radius: 5%;
+  border-radius: 2%;
   box-shadow: 0px 11px 9px -4px var(--btn-selected-shadow);
   color: var(--btn-selected-text);
   -moz-box-shadow: 0px 11px 9px -4px var(--btn-selected-shadow);
   -webkit-box-shadow: 0px 11px 9px -4px var(--btn-selected-shadow);
+}
+
+@media (min-width: 768px) {
+  .nav__link:hover {
+    border-radius: 5%;
+  }
 }

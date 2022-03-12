@@ -24,7 +24,7 @@
 
   .section-info,
   .section-img {
-    flex-basis: calc(51% - 1rem);
+    flex-basis: calc(50% - 1rem);
   }
 
   .section-info {
