@@ -14,7 +14,7 @@ I'm going to clone this [landing page](landingpage.png) and do following work:
 
 ## Bonus
 
-1. Additional page layouts .
+1. Additional page layouts.
 2. Deployment.
 
 ## Results
