@@ -1,5 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserWebpackPlugin = require('terser-webpack-plugin');
 const path = require('path');
 
 const rulesForHTML = {
@@ -69,6 +71,10 @@ module.exports = (env, argv) => {
       clean: true,
       filename: isProduction ? '[name].[fullhash].js' : 'main.js',
       path: path.resolve(__dirname, 'docs'),
+    },
+    optimization: {
+      minimize: true,
+      minimizer: [new CssMinimizerPlugin(), new TerserWebpackPlugin()],
     },
     plugins: [
       new HtmlWebpackPlugin({
