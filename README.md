@@ -19,7 +19,7 @@ I'm going to clone this [landing page](landingpage.png) and do following work:
 
 ## Results
 
-Check out the [vaccination campaign planning](https://miro.com/app/board/uXjVOFmX1nY=/?invite_link_id=91478595297) and [live website](https://enrique-mendoza.github.io/launchX-FrontEnd-Mission-02-CSS/) in their respective links. 👀
+Check out the [vaccination campaign planning](https://miro.com/app/board/uXjVOFmX1nY=/?invite_link_id=91478595297) and [live website](https://enrique-mendoza.github.io/launchX-FrontEnd-Mission-03-CSS/) in their respective links. 👀
 
 ## Notes
 
