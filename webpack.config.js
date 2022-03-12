@@ -44,7 +44,7 @@ const rulesForFiles = {
   test: /\.(jpe?g|png|gif|svg|webp)$/i,
   type: 'asset/resource',
   generator: {
-    filename: 'assets/images/[name].[ext]',
+    filename: 'assets/resources/[name].[ext]',
   },
   loader: 'image-webpack-loader',
 };
@@ -74,7 +74,7 @@ module.exports = (env, argv) => {
       new HtmlWebpackPlugin({
         title: 'Vaccination',
         template: './src/index.html',
-        filename: isProduction ? '[name].[fullhash].html' : 'index.html',
+        filename: isProduction ? 'index.html' : 'index.html',
         favicon: './src/assets/icons/fav.ico',
       }),
       new MiniCssExtractPlugin({
