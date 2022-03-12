@@ -8,7 +8,7 @@
 
 I'm going to clone this [landing page](landingpage.png) and do following work:
 
-1. [Vaccination campaign planning](https://miro.com/app/board/uXjVOFmX1nY=/?invite_link_id=91478595297).
+1. Vaccination campaign planning.
 2. Landing page layout.
 3. Styles with CSS.
 
@@ -16,6 +16,10 @@ I'm going to clone this [landing page](landingpage.png) and do following work:
 
 1. Additional page layouts .
 2. Deployment.
+
+## Results
+
+Check out the [vaccination campaign planning](https://miro.com/app/board/uXjVOFmX1nY=/?invite_link_id=91478595297) and [live website](https://enrique-mendoza.github.io/launchX-FrontEnd-Mission-02-CSS/) in their respective links. 👀
 
 ## Notes
 
