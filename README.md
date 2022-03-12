@@ -1,8 +1,23 @@
-# Webpack Starter
+<h1 align="center"> Launch X - FrontEnd Mission 🛰️ </h1>
 
-This is the initial project for building applications using webpack. Configured to work with js and jsx files, sass and assets.
+<h2 align="center">
+    Introduction to CSS
+</h2>
 
-### Notes
+## Practices
+
+I'm going to clone this [landing page](landingpage.png) and do following work:
+
+1. [Vaccination campaign planning](https://miro.com/app/board/uXjVOFmX1nY=/?invite_link_id=91478595297).
+2. Landing page layout.
+3. Styles with CSS.
+
+## Bonus
+
+1. Additional page layouts .
+2. Deployment.
+
+## Notes
 
 Command to rebuild Node modules:
 
@@ -16,3 +31,29 @@ Command to rebuild the build folder:
 npm run build
 ```
 
+## Credits:
+
+Landing page:
+
+- [Adhiari Subekti](https://dribbble.com/Adhiari_is)
+
+Images:
+
+- [@mdjaff](https://www.freepik.com/mdjaff)
+
+Icons:
+
+- [Google Material Design Icons](https://iconduck.com/sets/google-material-design-icons)
+
+Credits to Juan Rodrigo Martínez Plascencia - Web developer and cibersecurity specialist.
+
+Follow him on:
+
+- GitHub: romarpla
+- Instagram: romarpla
+
+And Luis Enrique Mendoza Higuera - Entry-level Software Engineer.
+
+Follow him on:
+
+- Github: enrique-mendoza
